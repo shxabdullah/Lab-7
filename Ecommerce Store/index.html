@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop North & Pine's tightly edited collection of modern everyday goods.">
+  <meta name="theme-color" content="#101426">
+  <title>North &amp; Pine — Everyday, upgraded.</title>
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23101426'/%3E%3Cpath d='M18 46V18l28 28V18' fill='none' stroke='%23ff9f75' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to products</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Primary navigation">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#top" aria-label="North and Pine home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span>North &amp; Pine</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#promise">Our promise</a></li>
+          </ul>
+          <div class="d-flex flex-wrap gap-2 align-items-center nav-actions">
+            <div class="dropdown account-dropdown">
+              <button class="btn btn-link nav-account" id="accountButton" type="button" data-bs-toggle="modal" data-bs-target="#authModal">
+                <i class="bi bi-person" aria-hidden="true"></i>
+                <span id="accountLabel">Sign in</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end account-menu" id="accountMenu" aria-labelledby="accountButton">
+                <li><span class="dropdown-header">Signed in as</span></li>
+                <li><span class="dropdown-item-text" id="accountEmail"></span></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><button class="dropdown-item" id="logoutButton" type="button"><i class="bi bi-box-arrow-right me-2" aria-hidden="true"></i>Sign out</button></li>
+              </ul>
+            </div>
+            <button class="btn cart-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartDrawer" aria-controls="cartDrawer" aria-label="Open cart, 0 items" id="cartButton">
+              <i class="bi bi-bag" aria-hidden="true"></i>
+              <span>Cart</span>
+              <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="container-xl">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-copy">
+            <span class="eyebrow">The everyday edit / 2026</span>
+            <h1 id="heroTitle">Useful things.<br><em>Better looking.</em></h1>
+            <p>Considered essentials for moving, making, and living well—picked for good design and built for repeat use.</p>
+            <div class="d-flex flex-wrap gap-3 align-items-center hero-actions">
+              <a class="btn btn-primary btn-lg" href="#shop">Shop the edit <i class="bi bi-arrow-down-right ms-1" aria-hidden="true"></i></a>
+              <span class="hero-note"><i class="bi bi-box-seam me-1" aria-hidden="true"></i> Free shipping over $75</span>
+            </div>
+            <div class="hero-proof" aria-label="Store rating and return policy">
+              <div><strong>4.9</strong><span><i class="bi bi-star-fill" aria-hidden="true"></i> average rating</span></div>
+              <div><strong>30</strong><span>day returns</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-media">
+              <img src="assets/hero-collection.png" alt="Blue headphones, apricot bottle, cream backpack, and white sneaker arranged on studio plinths" width="1536" height="1024" fetchpriority="high">
+              <span class="hero-index">EDIT<br>1-4</span>
+              <span class="hero-sticker"><i class="bi bi-arrow-up-right" aria-hidden="true"></i> New<br>daily<br>favorites</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shopTitle">
+      <div class="container-xl">
+        <div class="section-heading d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3">
+          <div>
+            <span class="eyebrow">Shop the collection</span>
+            <h2 id="shopTitle">Four favorites.<br>Zero filler.</h2>
+          </div>
+          <span class="product-total">04 objects / responsibly packed</span>
+        </div>
+
+        <div class="row g-4 product-grid">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card" data-product-card="arc-headphones">
+              <div class="product-image-wrap product-cobalt">
+                <span class="product-badge">Bestseller</span>
+                <img src="assets/product-headphones.png" alt="Cobalt blue Arc over-ear headphones" width="1254" height="1254" loading="lazy">
+              </div>
+              <div class="product-meta">
+                <div class="d-flex justify-content-between gap-2"><span>Audio</span><span aria-label="Rated 4.9 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9</span></div>
+                <h3>Arc Headphones</h3>
+                <div class="d-flex justify-content-between align-items-center"><strong>$129</strong><span class="swatch cobalt-swatch" aria-label="Cobalt"></span></div>
+              </div>
+              <button class="btn add-button w-100" type="button" data-add-product="arc-headphones"><span>Add to cart</span><i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card" data-product-card="day-bottle">
+              <div class="product-image-wrap product-apricot">
+                <span class="product-badge">New</span>
+                <img src="assets/product-bottle.png" alt="Apricot Day insulated water bottle" width="1254" height="1254" loading="lazy">
+              </div>
+              <div class="product-meta">
+                <div class="d-flex justify-content-between gap-2"><span>Hydration</span><span aria-label="Rated 4.8 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.8</span></div>
+                <h3>Day Bottle</h3>
+                <div class="d-flex justify-content-between align-items-center"><strong>$38</strong><span class="swatch apricot-swatch" aria-label="Apricot"></span></div>
+              </div>
+              <button class="btn add-button w-100" type="button" data-add-product="day-bottle"><span>Add to cart</span><i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card" data-product-card="field-pack">
+              <div class="product-image-wrap product-cream">
+                <span class="product-badge">Few left</span>
+                <img src="assets/product-backpack.png" alt="Cream Field canvas backpack with blue accents" width="1254" height="1254" loading="lazy">
+              </div>
+              <div class="product-meta">
+                <div class="d-flex justify-content-between gap-2"><span>Carry</span><span aria-label="Rated 4.9 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9</span></div>
+                <h3>Field Pack</h3>
+                <div class="d-flex justify-content-between align-items-center"><strong>$94</strong><span class="swatch cream-swatch" aria-label="Natural canvas"></span></div>
+              </div>
+              <button class="btn add-button w-100" type="button" data-add-product="field-pack"><span>Add to cart</span><i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            </article>
+          </div>
+
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="product-card" data-product-card="tempo-runner">
+              <div class="product-image-wrap product-blue">
+                <span class="product-badge">Staff pick</span>
+                <img src="assets/product-sneaker.png" alt="White Tempo low-top sneaker with cobalt blue details" width="1254" height="1254" loading="lazy">
+              </div>
+              <div class="product-meta">
+                <div class="d-flex justify-content-between gap-2"><span>Footwear</span><span aria-label="Rated 4.7 out of 5"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.7</span></div>
+                <h3>Tempo Runner</h3>
+                <div class="d-flex justify-content-between align-items-center"><strong>$112</strong><span class="swatch white-swatch" aria-label="White and blue"></span></div>
+              </div>
+              <button class="btn add-button w-100" type="button" data-add-product="tempo-runner"><span>Add to cart</span><i class="bi bi-plus-lg" aria-hidden="true"></i></button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-strip" id="promise" aria-label="Store benefits">
+      <div class="container-xl">
+        <div class="row g-0">
+          <div class="col-md-4 promise-item"><i class="bi bi-truck" aria-hidden="true"></i><div><strong>Free over $75</strong><span>Tracked shipping, on us</span></div></div>
+          <div class="col-md-4 promise-item"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i><div><strong>30-day returns</strong><span>Plenty of time to decide</span></div></div>
+          <div class="col-md-4 promise-item"><i class="bi bi-shield-check" aria-hidden="true"></i><div><strong>1-year guarantee</strong><span>We stand behind every object</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews-section" id="reviews" aria-labelledby="reviewsTitle">
+      <div class="container-xl">
+        <div class="row g-5 align-items-end reviews-intro">
+          <div class="col-lg-7">
+            <span class="eyebrow">Notes from real routines</span>
+            <h2 id="reviewsTitle">Already part of<br><em>the everyday.</em></h2>
+          </div>
+          <div class="col-lg-5">
+            <p>What matters most is how these pieces hold up after the unboxing. Here’s what customers say once they’ve lived with them.</p>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+          <div class="col-lg-4">
+            <article class="review-card review-featured">
+              <div class="review-stars" aria-label="5 out of 5 stars"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+              <blockquote>“The headphones feel considered in every detail. I wear them through a full workday and forget they’re there.”</blockquote>
+              <div class="reviewer"><span class="reviewer-avatar">MK</span><div><strong>Maya K.</strong><span>Arc Headphones · Verified buyer</span></div></div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="review-card">
+              <div class="review-stars" aria-label="5 out of 5 stars"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+              <blockquote>“The Field Pack is compact without feeling small. Laptop, lunch, and gym layer all fit without the bulk.”</blockquote>
+              <div class="reviewer"><span class="reviewer-avatar">AR</span><div><strong>Alex R.</strong><span>Field Pack · Verified buyer</span></div></div>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="review-card">
+              <div class="review-stars" aria-label="5 out of 5 stars"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></div>
+              <blockquote>“My Day Bottle still looks new after months in my tote. The apricot color is even better in person.”</blockquote>
+              <div class="reviewer"><span class="reviewer-avatar">JS</span><div><strong>Jordan S.</strong><span>Day Bottle · Verified buyer</span></div></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="footer-main d-flex flex-column flex-md-row justify-content-between gap-4">
+        <div><a class="footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">N</span><span>North &amp; Pine</span></a><p>Everyday objects, edited with care.</p></div>
+        <div class="footer-links"><a href="#shop">Shop</a><a href="#reviews">Reviews</a><button type="button" data-bs-toggle="modal" data-bs-target="#authModal" data-auth-tab="signup">Create account</button></div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between gap-2"><span>© 2026 North &amp; Pine</span><span>Demo storefront · No real payments are processed</span></div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="cartDrawer" aria-labelledby="cartDrawerLabel">
+    <div class="offcanvas-header">
+      <div><span class="eyebrow">Your selection</span><h2 class="offcanvas-title" id="cartDrawerLabel">Shopping cart <span id="cartItemLabel">(0)</span></h2></div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close cart"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div class="cart-live-region visually-hidden" id="cartLiveRegion" aria-live="polite"></div>
+      <div id="emptyCart" class="empty-cart text-center">
+        <span class="empty-cart-icon"><i class="bi bi-bag" aria-hidden="true"></i></span>
+        <h3>Your cart is feeling light.</h3>
+        <p>Choose an everyday upgrade and it’ll appear here.</p>
+        <button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas" data-scroll-shop>Browse the edit</button>
+      </div>
+      <div id="cartContent" class="d-none flex-grow-1 flex-column">
+        <div id="cartItems" class="cart-items"></div>
+        <div class="shipping-progress-wrap mt-auto">
+          <div class="d-flex justify-content-between gap-2"><span id="shippingMessage">Free shipping over $75</span><i class="bi bi-truck" aria-hidden="true"></i></div>
+          <div class="progress" role="progressbar" aria-label="Progress toward free shipping" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar" id="shippingProgress"></div></div>
+        </div>
+        <div class="cart-totals">
+          <div><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+          <div><span>Shipping</span><strong id="cartShipping">$0.00</strong></div>
+          <div><span>Estimated tax</span><strong id="cartTax">$0.00</strong></div>
+          <div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+        </div>
+        <button class="btn btn-primary btn-lg checkout-button" id="checkoutButton" type="button">Checkout securely <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i></button>
+        <p class="cart-caption"><i class="bi bi-lock me-1" aria-hidden="true"></i> Demo checkout. No payment will be charged.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade auth-modal" id="authModal" tabindex="-1" aria-labelledby="authModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0"><span class="modal-brand"><span class="brand-mark" aria-hidden="true">N</span></span><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div class="modal-body">
+          <span class="eyebrow">Your North &amp; Pine account</span>
+          <h2 class="modal-title" id="authModalTitle">Welcome back.</h2>
+          <p class="auth-intro" id="authIntro">Sign in to your browser-local demo profile.</p>
+
+          <ul class="nav nav-pills auth-tabs" role="tablist" aria-label="Account options">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="loginTab" data-bs-toggle="pill" data-bs-target="#loginPane" type="button" role="tab" aria-controls="loginPane" aria-selected="true">Log in</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="signupTab" data-bs-toggle="pill" data-bs-target="#signupPane" type="button" role="tab" aria-controls="signupPane" aria-selected="false">Sign up</button></li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="loginPane" role="tabpanel" aria-labelledby="loginTab" tabindex="0">
+              <form id="loginForm" class="account-form needs-validation" novalidate>
+                <div class="form-floating"><input type="email" class="form-control" id="loginEmail" placeholder="you@example.com" autocomplete="email" required><label for="loginEmail">Email address</label><div class="invalid-feedback">Enter a valid email address.</div></div>
+                <div class="form-floating"><input type="password" class="form-control" id="loginPassword" placeholder="Password" autocomplete="current-password" minlength="6" required><label for="loginPassword">Password</label><div class="invalid-feedback">Enter at least 6 characters.</div></div>
+                <div class="form-alert d-none" id="loginError" role="alert"></div>
+                <button class="btn btn-primary btn-lg w-100" type="submit">Log in</button>
+                <button class="text-switch" type="button" data-switch-auth="signup">New here? <strong>Create an account</strong></button>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="signupPane" role="tabpanel" aria-labelledby="signupTab" tabindex="0">
+              <form id="signupForm" class="account-form needs-validation" novalidate>
+                <div class="form-floating"><input type="text" class="form-control" id="signupName" placeholder="First name" autocomplete="given-name" minlength="2" required><label for="signupName">First name</label><div class="invalid-feedback">Enter your first name.</div></div>
+                <div class="form-floating"><input type="email" class="form-control" id="signupEmail" placeholder="you@example.com" autocomplete="email" required><label for="signupEmail">Email address</label><div class="invalid-feedback">Enter a valid email address.</div></div>
+                <div class="form-floating"><input type="password" class="form-control" id="signupPassword" placeholder="Password" autocomplete="new-password" minlength="6" required><label for="signupPassword">Create password</label><div class="invalid-feedback">Use at least 6 characters.</div></div>
+                <div class="form-floating"><input type="password" class="form-control" id="signupConfirm" placeholder="Confirm password" autocomplete="new-password" required><label for="signupConfirm">Confirm password</label><div class="invalid-feedback">Passwords must match.</div></div>
+                <button class="btn btn-primary btn-lg w-100" type="submit">Create account</button>
+                <button class="text-switch" type="button" data-switch-auth="login">Already have an account? <strong>Log in</strong></button>
+              </form>
+            </div>
+          </div>
+          <p class="local-note"><i class="bi bi-device-ssd me-1" aria-hidden="true"></i> Demo only: one local profile is stored in this browser. Creating another replaces it; nothing is sent to a server.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade checkout-modal" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div><span class="eyebrow">Final step</span><h2 class="modal-title" id="checkoutTitle">Checkout</h2></div>
+          <button type="button" class="btn-close" id="checkoutCloseButton" data-bs-dismiss="modal" aria-label="Close checkout"></button>
+        </div>
+        <div class="modal-body p-0">
+          <form id="checkoutForm" class="needs-validation" novalidate>
+            <div class="row g-0">
+              <div class="col-lg-7 checkout-fields">
+                <div class="checkout-section">
+                  <div class="checkout-section-title"><span>01</span><h3>Contact</h3></div>
+                  <div class="form-floating"><input type="email" class="form-control" id="checkoutEmail" placeholder="you@example.com" autocomplete="email" required><label for="checkoutEmail">Email for your receipt</label><div class="invalid-feedback">Enter a valid email address.</div></div>
+                </div>
+                <div class="checkout-section">
+                  <div class="checkout-section-title"><span>02</span><h3>Shipping</h3></div>
+                  <div class="row g-3">
+                    <div class="col-sm-6"><div class="form-floating"><input type="text" class="form-control" id="firstName" placeholder="First name" autocomplete="given-name" required><label for="firstName">First name</label><div class="invalid-feedback">Required.</div></div></div>
+                    <div class="col-sm-6"><div class="form-floating"><input type="text" class="form-control" id="lastName" placeholder="Last name" autocomplete="family-name" required><label for="lastName">Last name</label><div class="invalid-feedback">Required.</div></div></div>
+                    <div class="col-12"><div class="form-floating"><input type="text" class="form-control" id="address" placeholder="Street address" autocomplete="street-address" required><label for="address">Street address</label><div class="invalid-feedback">Enter a delivery address.</div></div></div>
+                    <div class="col-sm-5"><div class="form-floating"><input type="text" class="form-control" id="city" placeholder="City" autocomplete="address-level2" required><label for="city">City</label><div class="invalid-feedback">Required.</div></div></div>
+                    <div class="col-sm-4"><div class="form-floating"><select class="form-select" id="country" autocomplete="country-name" required><option value="" selected disabled>Select</option><option>United States</option><option>Canada</option><option>United Kingdom</option><option>Australia</option><option>Pakistan</option><option>Other</option></select><label for="country">Country</label><div class="invalid-feedback">Choose a country.</div></div></div>
+                    <div class="col-sm-3"><div class="form-floating"><input type="text" class="form-control" id="postalCode" placeholder="Postal code" autocomplete="postal-code" required><label for="postalCode">Postal code</label><div class="invalid-feedback">Required.</div></div></div>
+                  </div>
+                </div>
+                <div class="checkout-section">
+                  <div class="checkout-section-title"><span>03</span><h3>Payment</h3></div>
+                  <div class="demo-payment-note"><i class="bi bi-info-circle" aria-hidden="true"></i><span>This is a demo checkout. Use any 16 digits—nothing is transmitted or charged.</span></div>
+                  <div class="row g-3">
+                    <div class="col-12"><div class="form-floating"><input type="text" class="form-control" id="cardNumber" placeholder="Card number" inputmode="numeric" autocomplete="cc-number" maxlength="19" pattern="[0-9 ]{19}" required><label for="cardNumber">Card number</label><div class="invalid-feedback">Enter 16 digits.</div></div></div>
+                    <div class="col-sm-6"><div class="form-floating"><input type="text" class="form-control" id="cardName" placeholder="Name on card" autocomplete="cc-name" required><label for="cardName">Name on card</label><div class="invalid-feedback">Required.</div></div></div>
+                    <div class="col-7 col-sm-3"><div class="form-floating"><input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY" inputmode="numeric" autocomplete="cc-exp" maxlength="5" pattern="(0[1-9]|1[0-2])/[0-9]{2}" required><label for="cardExpiry">MM/YY</label><div class="invalid-feedback">Use MM/YY.</div></div></div>
+                    <div class="col-5 col-sm-3"><div class="form-floating"><input type="text" class="form-control" id="cardCvc" placeholder="CVC" inputmode="numeric" autocomplete="cc-csc" maxlength="4" pattern="[0-9]{3,4}" required><label for="cardCvc">CVC</label><div class="invalid-feedback">3–4 digits.</div></div></div>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-lg w-100 place-order-button" type="submit" id="placeOrderButton"><span>Place Order</span><i class="bi bi-lock-fill ms-1" aria-hidden="true"></i></button>
+              </div>
+              <aside class="col-lg-5 checkout-summary" aria-label="Order summary">
+                <h3>Order summary</h3>
+                <div id="checkoutItems" class="checkout-items"></div>
+                <div class="checkout-total-lines">
+                  <div><span>Subtotal</span><strong id="checkoutSubtotal">$0.00</strong></div>
+                  <div><span>Shipping</span><strong id="checkoutShipping">$0.00</strong></div>
+                  <div><span>Estimated tax</span><strong id="checkoutTax">$0.00</strong></div>
+                  <div class="checkout-grand-total"><span>Total</span><strong id="checkoutTotal">$0.00</strong></div>
+                </div>
+              </aside>
+            </div>
+          </form>
+
+          <div class="order-success" id="orderSuccess" role="status" aria-live="polite" tabindex="-1">
+            <span class="success-icon"><i class="bi bi-check-lg" aria-hidden="true"></i></span>
+            <span class="eyebrow">Order confirmed</span>
+            <h2>Good choice, <span id="orderFirstName">friend</span>.</h2>
+            <p>Your demo order <strong id="orderNumber"></strong> is complete. No payment was processed.</p>
+            <button class="btn btn-primary btn-lg" type="button" id="continueShopping">Continue shopping</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed top-0 end-0 p-3">
+    <div id="storeToast" class="toast store-toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-body"><span class="toast-icon"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span id="toastMessage">Added to your cart.</span><button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Close notification"></button></div>
+    </div>
+  </div>
+
+  <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
